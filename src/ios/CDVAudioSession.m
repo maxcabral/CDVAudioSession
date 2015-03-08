@@ -61,18 +61,18 @@
     if (options != nil && options.length != 0){
       NSArray *parsedOptions = [options componentsSeparatedByString:@"|"];
       
-      foreach (NSString *option in parsedOptions){
-        NSString *cleanedOption = [option stringByReplacingOccurrencesOfString:@" " withString:@""];
+      forin (NSString *option in parsedOptions){
+          NSString *cleanedOption = [option stringByReplacingOccurrencesOfString:@" " withString:@""];
   
-        if ([cleanedOption isEqualToString:"AVAudioSessionCategoryOptionMixWithOthers"]){
-          retVal = retVal | AVAudioSessionCategoryOptionMixWithOthers;
-        } else if ([cleanedOption isEqualToString:"AVAudioSessionCategoryOptionDuckOthers"]){
-          retVal = retVal | AVAudioSessionCategoryOptionDuckOthers;
-        } else if ([cleanedOption isEqualToString:"AVAudioSessionCategoryOptionAllowBluetooth"]){
-          retVal = retVal | AVAudioSessionCategoryOptionAllowBluetooth;
-        } else if ([cleanedOption isEqualToString:"AVAudioSessionCategoryOptionDefaultToSpeaker"]){
-          retVal = retVal | AVAudioSessionCategoryOptionDefaultToSpeaker;
-        }
+          if ([cleanedOption isEqualToString:@"AVAudioSessionCategoryOptionMixWithOthers"]){
+              retVal = retVal | AVAudioSessionCategoryOptionMixWithOthers;
+          } else if ([cleanedOption isEqualToString:@"AVAudioSessionCategoryOptionDuckOthers"]){
+              retVal = retVal | AVAudioSessionCategoryOptionDuckOthers;
+          } else if ([cleanedOption isEqualToString:@"AVAudioSessionCategoryOptionAllowBluetooth"]){
+              retVal = retVal | AVAudioSessionCategoryOptionAllowBluetooth;
+          } else if ([cleanedOption isEqualToString:@"AVAudioSessionCategoryOptionDefaultToSpeaker"]){
+              retVal = retVal | AVAudioSessionCategoryOptionDefaultToSpeaker;
+          }
       }
     }
     
