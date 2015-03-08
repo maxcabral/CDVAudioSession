@@ -2,15 +2,15 @@
 
 A thin wrapper around AVAudioSession, currently only supporting:
 
-  AVAudioSession setCategory: error:
-  AVAudioSession setCategory: withOptions: error:
+    AVAudioSession setCategory: error:
+    AVAudioSession setCategory: withOptions: error:
 
 ## Installation
 
-  cordova plugin add https://github.com/maxcabral/CDVAudioSession
+    cordova plugin add https://github.com/maxcabral/CDVAudioSession
 
 ## Usage
 
-  window.plugins.audioSession.setCategoryAndOptions('AVAudioSessionCategoryPlayback',
+    window.plugins.audioSession.setCategoryAndOptions('AVAudioSessionCategoryPlayback',
                                               'AVAudioSessionCategoryOptionDuckOthers|AVAudioSessionCategoryOptionAllowBluetooth')
 
