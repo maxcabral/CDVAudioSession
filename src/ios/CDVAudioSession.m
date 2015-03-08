@@ -61,7 +61,7 @@
     if (options != nil && options.length != 0){
       NSArray *parsedOptions = [options componentsSeparatedByString:@"|"];
       
-      forin (NSString *option in parsedOptions){
+      for (NSString *option in parsedOptions){
           NSString *cleanedOption = [option stringByReplacingOccurrencesOfString:@" " withString:@""];
   
           if ([cleanedOption isEqualToString:@"AVAudioSessionCategoryOptionMixWithOthers"]){
