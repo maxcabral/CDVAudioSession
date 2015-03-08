@@ -26,12 +26,12 @@
 
         //0 indicates we don't have an options value
         if (options != 0){
-            [audioSession setCategory:category
-                          withOptions:options
-                                error:&setCategoryError];
+            setSession = [audioSession setCategory:category
+                                       withOptions:options
+                                             error:&setCategoryError];
         } else {
-            [audioSession setCategory:category
-                                error:&setCategoryError];        
+            setSession = [audioSession setCategory:category
+                                             error:&setCategoryError];        
         }
       
         if (setCategoryError != nil || !setSession){
