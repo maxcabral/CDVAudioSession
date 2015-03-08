@@ -1,0 +1,40 @@
+{
+  "name": "CDVAudioSession",
+  "version": "1.0.0",
+  "description": "Cordova interface to AVAudioSession",
+  "cordova": {
+    "id": "com.maxcabral.CDVAudioSession",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxcabral/CDVAudioSession.git"
+  },
+  "keywords": [
+    "audio",
+    "duck",
+    "ios",
+    "AVAudioSession",
+    "AVAudioSessionCategoryOptions",
+    "AVAudioSessionCategoryOptionDefaultToSpeaker",
+    "AVAudioSessionCategoryOptionAllowBluetooth",
+    "AVAudioSessionCategoryOptionDuckOthers",
+    "AVAudioSessionCategoryOptionMixWithOthers",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova-ios",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "Maxwell Cabral",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxcabral/CDVAudioSession/issues"
+  },
+  "homepage": "https://github.com/maxcabral/CDVAudioSession"
+}
