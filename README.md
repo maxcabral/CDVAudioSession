@@ -11,6 +11,6 @@ A thin wrapper around AVAudioSession, currently only supporting:
 
 ## Usage
 
-  window.plugins.AudioSession.setCategoryAndOptions('AVAudioSessionCategoryPlayback',
-                                                    'AVAudioSessionCategoryOptionDuckOthers|AVAudioSessionCategoryOptionAllowBluetooth')
+  window.plugins.audioSession.setCategoryAndOptions('AVAudioSessionCategoryPlayback',
+                                              'AVAudioSessionCategoryOptionDuckOthers|AVAudioSessionCategoryOptionAllowBluetooth')
 
