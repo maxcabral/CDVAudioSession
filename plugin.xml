@@ -26,6 +26,12 @@
             </feature>
         </config-file>
 
+        <config-file target="*-Info.plist" parent="UIBackgroundModes">
+            <array>
+                <string>audio</string>
+            </array>
+        </config-file>
+
         <framework src="AVFoundation.framework" weak="true"/>
         <header-file src="src/ios/CDVAudioSession.h" />
         <source-file src="src/ios/CDVAudioSession.m" />
