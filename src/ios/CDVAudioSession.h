@@ -15,6 +15,6 @@ Converts an NSString representing a AVAudioSessionCategoryOptions enum/bitmask t
 The options string should look like a standard Objective C enum assignment, i.e.
 "AVAudioSessionCategoryOptionDefaultToSpeaker|AVAudioSessionCategoryOptionAllowBluetooth"
 */
-+ (AVAudioSessionCategoryOptions)audioSessionCategoryFromString:(NSString)options;
++ (AVAudioSessionCategoryOptions)audioSessionCategoryFromString:(NSString*)options;
 
 @end

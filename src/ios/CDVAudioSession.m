@@ -53,7 +53,7 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-+ (AVAudioSessionCategoryOptions)audioSessionCategoryFromString:(NSString)options
++ (AVAudioSessionCategoryOptions)audioSessionCategoryFromString:(NSString*)options
 {
     AVAudioSessionCategoryOptions retVal = 0;
 
