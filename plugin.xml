@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.maxcabral.CDVAudioSession"
+        version="1.0.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>CDVAudioSession</name>
+    <description>Cordova interface to AVAudioSession</description>
+    <license>MIT</license>
+    <keywords>audio,duck,ios,AVAudioSession,AVAudioSessionCategoryOptions,AVAudioSessionCategoryOptionDefaultToSpeaker,AVAudioSessionCategoryOptionAllowBluetooth,AVAudioSessionCategoryOptionDuckOthers,AVAudioSessionCategoryOptionMixWithOthers</keywords>
+    <repo>https://github.com/maxcabral/CDVAudioSession</repo>
+    <author>Maxwell Cabral</author>
+
+    <engines>
+        <engine name="cordova-ios" version=">=3.0.0" />
+    </engines>
+
+    <js-module name="CDVAudioSession" src="www/CDVAudioSession.js">
+        <clobbers target="cordova.plugins.CDVAudioSession" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CDVAudioSession">
+              <param name="ios-package" value="CDVAudioSession" />
+            </feature>
+        </config-file>
+
+        <framework src="AVFoundation.framework" weak="true"/>
+        <header-file src="src/ios/CDVAudioSession.h" />
+        <source-file src="src/ios/CDVAudioSession.m" />
+    </platform>
+
+</plugin>
