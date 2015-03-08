@@ -16,7 +16,7 @@
     </engines>
 
     <js-module name="CDVAudioSession" src="www/CDVAudioSession.js">
-        <clobbers target="cordova.plugins.CDVAudioSession" />
+        <clobbers target="plugins.audioSession" />
     </js-module>
 
     <platform name="ios">
